@@ -1,0 +1,14 @@
+name: cotracker-napari-plugin
+contributions:
+  commands:
+  - id: cotracker-napari-plugin.cotracker_widget
+    title: Open CoTrackerBasic
+    python_name: cotracker_napari_plugin.widget:cotracker_widget
+  - id: cotracker-napari-plugin.polyline_test
+    title: Test polyline
+    python_name: cotracker_napari_plugin.widget:polyline_test
+  widgets:
+  - command: cotracker-napari-plugin.cotracker_widget
+    display_name: CoTracker3 Basic
+  - command: cotracker-napari-plugin.polyline_test
+    display_name: PolyLine Test
